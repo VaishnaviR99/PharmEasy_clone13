@@ -374,6 +374,7 @@ swiper-pagination img {
 #adimg {
     width: 80%;
     margin: auto;
+    margin-top: 50px;
 }
 
 #adimg div{
@@ -405,4 +406,8 @@ swiper-pagination img {
 #lasttext{
     width: 80%;
     margin: auto;
+}
+
+.spotlight{
+    background-color: #fef7e3;
 }
