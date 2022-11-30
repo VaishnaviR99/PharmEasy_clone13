@@ -1,0 +1,55 @@
+#header{
+    background-color: #10847E;
+    display: flex;
+   
+ }
+ .ph{
+     padding-left: 5%;
+    padding-top: 10px;
+    
+ }
+ .ph >img{
+     width: 50%;
+    height: 80%;
+ }
+ .logo> img{
+     width: 150%;
+     height: 100%;
+     margin-left: 500%;
+     padding-left: 300%;
+     
+ }
+ 
+ form {
+     margin: 40px;
+     padding-bottom: 10px;
+ }
+ input{
+     margin: 20px;
+     padding: 20px;
+     padding-right: 80%;
+     border-radius: 10px;
+     border-color: gray;
+     
+    
+ }
+ button{
+     margin: 20px;
+     padding: 20px;
+     padding-right: 91%;
+     background-color: #30908b;
+     border-radius: 10px;
+     
+ }
+ 
+ p{
+     margin-left: 5%;
+     margin-top: -40px;
+     
+ }
+ h3{
+     margin-left: 5%;
+     margin-bottom: -2%;
+     color: rgb(95, 93, 93);
+ }
+ 
