@@ -27,8 +27,14 @@
 
 #topbar li a{
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 500;
     color:#5d6166;
+    margin-bottom: 2px;
+}
+
+#topbar li a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 
 #topbar li:nth-child(1){
@@ -65,8 +71,12 @@
 
 #navbar li a{
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 550;
     color:#5d6166;
+}
+
+#navbar li a:hover {
+    color: #10847e;
 }
 
 /* one */
@@ -265,27 +275,36 @@ swiper-pagination img {
 
 #threea .imgtag>div{
     padding: 10px;
+    
+}
+
+#threea .imgtag>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 #threea .imgtag div {
     object-fit: cover;
     width: calc(100% / 4);
-    height: 100px;
+    height: 70px;
     margin-left: 15px;
     border: 1px solid rgba(112, 110, 110, 0.452);
+    border-radius: 10px;
     display: flex;
+    /* border: 2px solid rgb(190, 24, 6); */
 }
 
 #threea .imgtag div img,p {
-    /* margin: 10px; */
+    margin: 10px;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    /* width: 90%; */
 }
 
 #threea .imgtag img:first-child{
     margin-left: 0px;
 }
+
+
 
 /* -------------- */
 #threeb {
