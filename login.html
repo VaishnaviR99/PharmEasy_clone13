@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="login.js" ></script>
 </head>
 <body>
     <div id="header">
@@ -20,9 +21,9 @@
     <h3> Quick Login / Register</h3>
     <form>
          
-         <input type="number" placeholder="Enter your phone number"><br>
-         <input type="text" placeholder="Enter Password"><br>
-         <button >Login</button>
+         <input id="number" type="number" placeholder="Enter your phone number"><br>
+         <input id="password" type="text" placeholder="Enter Password"><br>
+         <input id="btn" type="submit" value="Login" onclick="validate()">
      
         
     </form>
