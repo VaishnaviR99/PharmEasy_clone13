@@ -85,6 +85,10 @@
     /* border: solid red; */
     width: 80%;
     margin: auto;
+    padding-top: 35px;
+    /* background-color: #e3f6fc; For browsers that do not support gradients */
+    background-image: url("images/gradient.jpg");
+    background-position: 50%;
 }
 
 #topbar .fa-mobile-button {
@@ -97,11 +101,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #searchbar {
     width: 900px;
     margin: auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.searchslider{
+    color: gray;
+    position: absolute;
+    bottom: 0;
+    left: 134px;
+    animation: searchslider 6s linear infinite;
+}
+
+@keyframes searchslider{
+    0%{transform: translateY(-55px); }
+    5%{transform: translateY(0px); }
+    30%{transform: translateY(0px); }
+    35%{transform: translateY(55px); }
+    65%{transform: translateY(55px); }
+    70%{transform: translateY(110px); }
+    100%{transform: translateY(110px); }
+}
+
+.searchslider div{
+    height: 55px;
+    display: flex;
+    align-items: center;
 }
 
 #searchbar p{
@@ -203,6 +235,12 @@ form .fa-magnifying-glass{
     display: flex;
 }
 
+.swiper img{
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
 swiper-pagination img {
     width: 100%;
     margin: 15px;
@@ -255,7 +293,6 @@ swiper-pagination img {
     display: flex;
     justify-content: space-around;
 }
-
 
 /* three  */
 
@@ -406,6 +443,13 @@ swiper-pagination img {
 #lasttext{
     width: 80%;
     margin: auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    line-height: 25px;
+}
+
+#lasttext p{
+    margin-bottom: 25px;
 }
 
 /* footer */
