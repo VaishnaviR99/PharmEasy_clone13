@@ -19,17 +19,36 @@
         
     </div>
     <h3> Quick Login / Register</h3>
-    <form>
+    <form class="form " id="login">
          
-         <input id="number" type="number" placeholder="Enter your phone number"><br>
-         <input id="password" type="text" placeholder="Enter Password"><br>
+         <input id="number" type="number" autofocus placeholder="Enter your phone number"><br>
+         <input id="password" type="password" autofocus placeholder="Enter Password"><br>
          <input id="btn" type="submit" value="Login" onclick="validate()">
+         
+        <p class="form__text">
+            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+        </p>
      
         
     </form>
-    <p>By clicking continue, you agree with our Privacy Policy</p>
+    
     
 
+    <form class="form form--hidden" id="createAccount">
+        <input id="Name" type="text" autofocus placeholder="Enter Name"><br>
+        <input id="number" type="number" autofocus placeholder="Enter your phone number"><br>
+        <input id="password" type="password" autofocus placeholder="Enter Password"><br>
+        <input id="password" type=" password" autofocus placeholder="Confirm Password"><br>
+        <button class="form__button" type="submit">Continue</button>
+        
+       <p class="form__text">
+           <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+       </p>
     
+       
+   </form>
+    
+
+   <p>By clicking continue, you agree with our Privacy Policy</p>
 </body>
 </html>
