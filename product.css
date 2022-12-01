@@ -1,5 +1,5 @@
 #main {
-    border: 2px solid black; 
+    /* border: 2px solid black;  */
    display: flex;
    width: 60%;
    
@@ -9,12 +9,15 @@
 }
 
 #parent1 {
-   border: 2px solid red;
+   /* border: 2px solid red; */
    width: 100%;
    /* display: flex; */
    justify-content: space-evenly;
    /* margin-top: -50px; */
 
+}
+#boxes .img {
+    border: #8897A2;
 }
 #productsummary {
    display: flex;
@@ -112,15 +115,21 @@ td {
    
 
 }
-#parent2 button:nth-child(1){
+#parent2 button {
+    height: 40px;
+    width: 35%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #8897A2;
 }
 #parent2 > h4 {
    color: #10847E;
 }
 #rightpage {
    display: flex;
-   border: 2px solid crimson;
-   height: 200px;
+   /* border: 2px solid crimson; */
+   height: 50px;
 }
 #rightpage button {
     margin-left: 90px;
@@ -130,17 +139,25 @@ td {
     border: white;
     margin-top: 25px;
 }
-#lastimg img {
-    border: 2px solid blue;
+#lastimg {
     display: flex;
-    width: 20%;
-    height: 40px;
-    margin-top: 60px;
-    /* padding-right: 20px; */
-    /* margin-right: 50px; */
-    
-
+    height: 30px;
+    margin-top: 10px;
 }
+#lastimg p {
+    margin-left: 10px;
+    padding-bottom: 50px;
+}
+#lastpara {
+    display: flex;
+    height: 30px;
+    margin-top: 20px;
+}
+#lastpara p {
+    margin-left: 10px;
+    padding-bottom: 50px;
+}
+
 #parent2 > div:nth-child(3) {
    display: flex;
 
