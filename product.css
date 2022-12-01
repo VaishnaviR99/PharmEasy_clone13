@@ -1,0 +1,97 @@
+#main {
+    border: 2px solid black; 
+   display: flex;
+   width: 70%;
+   
+   justify-content: center;
+   margin: 120px;
+
+}
+
+#parent1 {
+   border: 2px solid red;
+   width: 100%;
+   /* display: flex; */
+   justify-content: space-evenly;
+   /* margin-top: -50px; */
+
+}
+#productsummary {
+   display: flex;
+   height: 50px;
+  
+
+}
+#parent1>div:nth-child(2)>p {
+   width: 50%;
+
+}
+
+#boxes {
+   display: flex;
+
+}
+#box {
+    border: 2px solid green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+#details{
+   border: 2px solid blue;
+   width: 40%;
+   height: 310px;
+}
+
+#belowprod > h4 {
+   background-color: rgb(43, 127, 132);
+   margin-right: 500px;
+   width: 20%;
+}
+
+table,
+td {
+   border: 2px solid black;
+   border-collapse: collapse;
+
+}
+#belowtable {
+   display: flex;
+   /* justify-content: space-between; */
+}
+
+#belowtable>p {
+   padding-left: 20px;
+   padding-right: 50px;
+}
+
+#parent2 {
+   border: 2px solid green;
+   width: 50%;
+   height: 400px;
+
+}
+#parent2 button:nth-child(1){
+   width: 40%;
+}
+#parent2 > h4 {
+   color: #10847E;
+}
+#rightpage {
+   display: flex;
+}
+
+#parent>div:nth-child(3) {
+   display: flex;
+
+}
+#pro > h4 {
+    background-color: blue;
+    /* width: 70%; */
+    border: 2px solid red;
+}
+#pro {
+    width: 70%;
+}
+
