@@ -1,7 +1,7 @@
 #main {
     border: 2px solid black; 
    display: flex;
-   width: 70%;
+   width: 60%;
    
    justify-content: center;
    margin: 120px;
@@ -19,8 +19,21 @@
 #productsummary {
    display: flex;
    height: 50px;
-  
-
+   margin-bottom: 30px;
+   
+}
+#content > table {
+    height: 250px;
+    width: 70%;
+    
+}
+td {
+    font-size: larger;
+    padding-left: 20px;
+    
+}
+td:nth-child(1) {
+    font-weight:bold;
 }
 #parent1>div:nth-child(2)>p {
    width: 50%;
@@ -32,27 +45,36 @@
 
 }
 #box {
-    border: 2px solid green;
+    /* border: 2px solid green; */
     padding-top: 30px;
     padding-bottom: 30px;
 
 }
 
 #details{
-   border: 2px solid blue;
-   width: 40%;
-   height: 310px;
+   /* border: 2px solid blue; */
+   width: 30%;
+   height: 307px;
 }
-
-#belowprod > h4 {
-   background-color: rgb(43, 127, 132);
-   margin-right: 500px;
-   width: 20%;
+#details button {
+    color: #ffff;
+    background-color: #10847E;
+    height: 40px;
+    width: 60%;
 }
+#belowprod p {
+    font-size: larger;
+    
 
+}
+#belowprod h3 {
+    margin-top: -15px;
+    margin-bottom: -10px;
+    font-size: x-large;
+}
 table,
 td {
-   border: 2px solid black;
+   border: 1px solid black;
    border-collapse: collapse;
 
 }
@@ -60,36 +82,77 @@ td {
    display: flex;
    /* justify-content: space-between; */
 }
-
-#belowtable>p {
-   padding-left: 20px;
-   padding-right: 50px;
+#belowtable button {
+    font-weight: bold;
+    color: #10847E;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 150px;
+    border:rgb(194, 234, 232);
+    
 }
 
+#belowtable > p {
+   padding-left: 20px;
+   padding-right: 50px;
+   font-size: large;
+}
+#belowtable img {
+    margin-left: 20px;
+    
+
+}
 #parent2 {
    border: 2px solid green;
-   width: 50%;
-   height: 400px;
+   width: 60%;
+   height: 500px;
+   justify-content: center;
+   margin: 120px;
+   margin-top: -120px;
+   
 
 }
 #parent2 button:nth-child(1){
-   width: 40%;
 }
 #parent2 > h4 {
    color: #10847E;
 }
 #rightpage {
    display: flex;
+   border: 2px solid crimson;
+   height: 200px;
 }
+#rightpage button {
+    margin-left: 90px;
+    color: #10847E;
+    font-weight:bold;
+    height: 20px;
+    border: white;
+    margin-top: 25px;
+}
+#lastimg img {
+    border: 2px solid blue;
+    display: flex;
+    width: 20%;
+    height: 40px;
+    margin-top: 60px;
+    /* padding-right: 20px; */
+    /* margin-right: 50px; */
+    
 
-#parent>div:nth-child(3) {
+}
+#parent2 > div:nth-child(3) {
    display: flex;
 
 }
 #pro > h4 {
-    background-color: blue;
+    background-color:#E9F9FF;
     /* width: 70%; */
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    height: 40px;
+    padding-left: 50px;
+    padding-top: 20px;
+    
 }
 #pro {
     width: 70%;
