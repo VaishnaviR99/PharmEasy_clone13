@@ -240,12 +240,31 @@ form .fa-magnifying-glass{
     display: flex;
     width: 100%;
     margin: auto;
+    /* media  */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+
 
 .box {
     /* margin-right: 20px !important; */
     /* margin-left: 20px; */
     margin: 0px 20px;
+    /* media  */
+    width: 9%;
+    margin-top: 10px; 
+}
+/* media  */
+@media screen and (min-width: 481px) and (max-width: 1512px){
+    .box{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 480px){
+    .box{
+        width: 47%;
+    }
 }
 
 .box>hr{
@@ -294,14 +313,16 @@ swiper-pagination img {
     display: flex;
     justify-content: space-around;
     border-bottom: 50px;
+    
 }
 
 #twobar>div{
     /* border: 2px solid rgb(190, 24, 6); */
     width: 12%;
     display: flex;
-    
-}
+}    
+
+
 
 #twobar div>i{
     align-self: center;
@@ -316,6 +337,27 @@ swiper-pagination img {
 .twowrapper {
     display: flex;
     justify-content: space-around;
+    /* media  */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.twowrapper img{
+    /* media  */
+    width: 12%;
+    margin-top: 10px; 
+}
+
+/* media  */
+@media screen and (min-width: 481px) and (max-width: 1512px){
+    .twowrapper>img{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 480px){
+    .twowrapper>img{
+        width: 47%;
+    }
 }
 
 /* three  */
