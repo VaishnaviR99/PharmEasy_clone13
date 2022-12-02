@@ -91,6 +91,23 @@
     background-position: 50%;
 }
 
+#one>div>h2{
+    margin-left: 300px;
+}
+#one>div>p{
+    margin-left: 900px;
+}
+#one>div>p a{
+    color: #10847e;
+    font-weight: 60px;
+}
+
+#one>div>p a:hover{
+    color: #051d1c;
+    font-weight: 60px;
+}
+
+
 #topbar .fa-mobile-button {
     align-self: center;
     padding: 10px 20px;
@@ -104,12 +121,16 @@
     overflow: hidden;
 }
 
+.container button:hover{
+    background-color: #0a534f;
+    
+}
+
 #searchbar {
     width: 900px;
     margin: auto;
     position: relative;
     overflow: hidden;
-    
 }
 
 .searchslider{
@@ -118,7 +139,10 @@
     bottom: 0;
     left: 134px;
     animation: searchslider 6s linear infinite;
+    /* z-index: 99; */
+    
 }
+
 
 @keyframes searchslider{
     0%{transform: translateY(-55px); }
