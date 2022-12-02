@@ -23,9 +23,9 @@
          
          <input id="number" type="number" autofocus placeholder="Enter your phone number"><br>
          <input id="password" type="password" autofocus placeholder="Enter Password"><br>
-         <input id="btn" type="submit" value="Login" onclick="validate()">
+         <input id="btn" type="submit" value="Login" onclick="test()">
          
-        <p class="form__text">
+        <p class="form__text" style="margin-top: 10px;">
             <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
         </p>
      
@@ -36,12 +36,12 @@
 
     <form class="form form--hidden" id="createAccount">
         <input id="Name" type="text" autofocus placeholder="Enter Name"><br>
-        <input id="number" type="number" autofocus placeholder="Enter your phone number"><br>
-        <input id="password" type="password" autofocus placeholder="Enter Password"><br>
-        <input id="password" type=" password" autofocus placeholder="Confirm Password"><br>
-        <button class="form__button" type="submit">Continue</button>
+        <input id="no" type="number" autofocus placeholder="Enter your phone number"><br>
+        <input id="passw" type="password" autofocus placeholder="Enter Password"><br>
+        <input id="cpassw" type=" password" autofocus placeholder="Confirm Password"><br>
+        <button class="form__button" type="submit" onclick="test()">Continue</button>
         
-       <p class="form__text">
+       <p class="form__text" style="margin-top: 10px;">
            <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
        </p>
     
