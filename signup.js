@@ -5,6 +5,7 @@ function signup(e) {
        var mobno = document.getElementById('no').value;
        var pass = document.getElementById('passw').value;
        var cpass = document.getElementById('cpassw').value;
+       
 
 
        
