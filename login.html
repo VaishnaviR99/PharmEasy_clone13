@@ -20,14 +20,18 @@
     </div>
     <h3> Quick Login / Register</h3>
     <form class="form " id="login">
+        <p id="result"> </p>
          
-         <input id="number" type="number" autofocus placeholder="Enter your phone number"><br>
+         <input id="username" type="text" autofocus placeholder="Enter your username"><br>
+         
          <input id="password" type="password" autofocus placeholder="Enter Password"><br>
-         <input id="btn" type="submit" value="Login" onclick="test()">
+         
+         <input id="btn" type="submit" value="Login" onclick="loginFunc()">
          
         <p class="form__text" style="margin-top: 10px;">
             <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
         </p>
+        
      
         
     </form>
@@ -38,8 +42,8 @@
         <input id="Name" type="text" autofocus placeholder="Enter Name"><br>
         <input id="no" type="number" autofocus placeholder="Enter your phone number"><br>
         <input id="passw" type="password" autofocus placeholder="Enter Password"><br>
-        <input id="cpassw" type=" password" autofocus placeholder="Confirm Password"><br>
-        <button class="form__button" type="submit" onclick="test()">Continue</button>
+        <input id="cpassw" type="password" autofocus placeholder="Confirm Password"><br>
+        <button class="form__button" type="submit" onclick="signup()">Continue</button>
         
        <p class="form__text" style="margin-top: 10px;">
            <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>

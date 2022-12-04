@@ -1,37 +1,59 @@
 
 
 
-     function test() { 
-      var uid = document.getElementById("Name").value;
-      var unum = document.getElementById("no").value;
-      var pw = document.getElementById("passw").value;
-      var cpw = document.getElementById("cpassw").value;
-      var email = document.getElementById("email").value; 
-      
-      // Storing data
-       var user = localStorage.setItem("uid", uid);
-       var uno = localStorage.setItem("unum", unum);
+     function signup(e) { 
+        event.preventDefault();
+        
+           var username = document.getElementById('Name').value;
+           var mobno = document.getElementById('no').value;
+           var pass = document.getElementById('passw').value;
+           var cpass = document.getElementById('cpassw').value;
 
-       var pass = localStorage.setItem("pw", pw);
-       var conpw = localStorage.setItem("cpw", cpw);
+
+           
+           var user = { 
+            mobnumber: mobno,
+            username: username, 
+            password: pass,
+           }; 
+           
+           var json = JSON.stringify (user);
+            localStorage.setItem(username, json);
+             console.log('user added');
+
+             if(pass!==cpass){
+              alert("passwored not match");
+             }
+             else if(pass===cpass){
+              alert("Account created succesfully...!!!");
+             }
+             else if(username===null){
+              alert("Fill details...!!!");
+             }
+             
+     }
+
+
+     function loginFunc(e) {
+       event.preventDefault();
        
-      // Retreiving stored data and using it for calculation 
-      var user = localStorage.getItem("uid", uid); 
-      var uno = document.getItem("unum",unum);
-      var pass = localStorage.getItem("pw", pw); 
-      var conpw = localStorage.getItem("cpw", cpw); 
-      
-
-      
-      var usernumber=document.getElementById("number").value; 
-      var password=document.getElementById("password").value; 
-
-       if (usernumber == uno  && password == pass  ){
-         alert("Login successful !"); 
-        } else { alert("Invalid details !"); 
+       var username = document.getElementById('username').value;
+       var pass = document.getElementById("password").value; 
+       var result = document.getElementById('result'); 
+       
+       
+       var user = localStorage.getItem(username); 
+       var data = JSON.parse(user); 
+       console.log(data); 
+       
+       if(user == null) {
+         alert("Wrong username");
+         } else if(username == data. username && pass == data.password) { 
+          result.innerHTML = 'Loged in sucesssull...!!!'; 
+        }else{ 
+          result.innerHTML = 'Wrong password....!!!';
+        }
       }
-    }
-    
      
      
      

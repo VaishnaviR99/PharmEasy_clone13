@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment page</title>
     <link rel="stylesheet" href="checkoutpage.css">
+    <script src="checkoutpage.js" ></script>
 </head>
 <body>
     <div id="header">
@@ -13,7 +14,7 @@
             <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=360x0" alt="pharmeasy">
         </div>
         <div class="logo">
-            <p>100% Secure Payments</p>
+            <p style="padding-left: 30px ;">100% Secure Payments</p>
         </div>
         
     </div>
@@ -22,18 +23,21 @@
             <h1>Offers</h1>
             <div>
                 <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="paytm">
-                <button> Paytm Wallet</button>
+                <button> Paytm Wallet</button><br>
+                <input id="pbtn" type="submit" value="Place order & Pay" onclick="payment()">
                 <hr>
             </div>
             <div>
                 <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="amezonpay">
-                <button> Amazon Pay</button>
+                <button> Amazon Pay</button><br>
+                <input id="pbtn" type="submit" value="Place order & Pay" onclick="payment()">
                 <p> Up to Rs.600 cashback on minimum transaction of Rs.299. Valid once per user.</p>
                 <hr>
             </div>
             <div>
                 <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="mobikwik">
-                <button> MobiKwik | ZIP (Pay Later)</button>
+                <button> MobiKwik | ZIP (Pay Later)</button><br>
+                <input id="pbtn" type="hidden" value="Place order & Pay" onclick="payment()">
                 <p> Up to Rs.650 cashback on Mobikwik. Code:MBK650. Valid once & order above Rs.800.</p>
                 <hr>
             </div>
@@ -97,7 +101,32 @@
                 
         </div>
         <div class="right">
-            <h3> Price Breakdown </h3>
+
+            <div class="total">
+                
+                    <h3 id="headingRow">Price Breakdown </h3>
+                    <div class="row1">
+                         <h4>Cart Value</h4>
+                         <p style=" margin-left: 50%;"> 200 </p> 
+                    </div>
+                    <div class="row2"> 
+                        <h4>Delivery charges</h4> 
+                        <p> ₹75 </p>
+                    
+                    
+                    </div>
+                    <hr id="st"> 
+                    <div class="row3"> 
+                        <h4>Amount to be paid</h4> 
+                        <p> ₹926.39 </p>
+                    
+                    
+                    </div>
+                    <hr id="nd">
+                    
+                    
+                    
+            </div>
 
         </div>
 
