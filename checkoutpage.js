@@ -5,12 +5,30 @@ function payment(){
 } 
 
 
-var cartAmount=JSON.parse(localStorage.getItem("cartTotal"));
-document.querySelector("#cartPrice").innerText=cartAmount;
 
-let delivery= 75;
-document.querySelector("#deliverycharge").innerText=delivery;
-var totalBill=JSON.parse(localStorage.getItem("totalBill"));
-document.querySelector("#totalbillpaid").innerText=totalBill;
+var cartAmount=localStorage.getItem("cartTotal");
+document.querySelector("#cartPrice").textContent=cartAmount;
+
+var delivery= chargesDelivery();
+document.querySelector("#deliverycharge").textContent=delivery;
+
+
+var totalBill= Totalillcharges(  );
+document.querySelector("#totalbillpaid").textContent=totalBill;
+
+
+function  chargesDelivery(){
+    if(cartAmount>500){
+        return 0;
+    }else{
+        return 75;
+    }
+}
+
+function Totalillcharges(  ){
+    totalBill=Number (delivery) + Number (cartAmount);
+    return totalBill;
+}
+
 
     

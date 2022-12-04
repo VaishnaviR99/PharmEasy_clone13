@@ -82,7 +82,7 @@ function displayproducts() {
         addbtn.setAttribute("class", "address");
         addbtn.addEventListener("click", login);
         function login() {
-            window.location.href = "loginpage.html";
+            window.location.href = "checkoutpage.html";
         }
         document.querySelector(".total>h4").append(addbtn)
         
