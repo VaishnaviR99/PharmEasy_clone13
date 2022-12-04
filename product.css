@@ -16,6 +16,10 @@
    /* margin-top: -50px; */
 
 }
+#parent p {
+    font-size: 12px;
+    color: #8897A2;
+}
 #boxes .img {
     border: #8897A2;
 }
@@ -25,6 +29,10 @@
    margin-bottom: 30px;
    
 }
+#productsummary img {
+    width: 30px;
+    align-items: center;
+}
 #content > table {
     height: 250px;
     width: 70%;
@@ -33,6 +41,7 @@
 td {
     font-size: larger;
     padding-left: 20px;
+    border: 1px solid red;
     
 }
 td:nth-child(1) {
@@ -51,6 +60,17 @@ td:nth-child(1) {
     /* border: 2px solid green; */
     padding-top: 30px;
     padding-bottom: 30px;
+    border: 1px solid gray ;
+    border-radius: 6px ;
+    /* padding: -100px; */
+    margin: 20px;
+
+}
+#small img{
+    border:1px solid gray ;
+    height: 50px;
+    border-radius: 4px ;
+    margin-right: 5px;
 
 }
 
@@ -60,11 +80,15 @@ td:nth-child(1) {
    height: 307px;
 }
 #details button {
+    margin-top: -10px;
+    border-radius: 5px;
     color: #ffff;
     background-color: #10847E;
+    border: none;
     height: 40px;
     width: 60%;
 }
+
 #belowprod p {
     font-size: larger;
     
@@ -90,8 +114,10 @@ td {
     color: #10847E;
     height: 20px;
     margin-top: 25px;
-    margin-left: 150px;
+    margin-left: 138px;
     border:rgb(194, 234, 232);
+    background: white;
+    border: none;
     
 }
 
@@ -106,7 +132,7 @@ td {
 
 }
 #parent2 {
-   border: 2px solid green;
+   /* border: 2px solid green; */
    width: 60%;
    height: 500px;
    justify-content: center;
@@ -116,23 +142,28 @@ td {
 
 }
 #parent2 button {
+    border-radius: 5px;
     height: 40px;
     width: 35%;
     font-size: 15px;
     font-weight: bold;
     color: #ffff;
     background-color: #8897A2;
+    border: none;
 }
-#parent2 > h4 {
+#parent2 > ul {
    color: #10847E;
+   
 }
 #rightpage {
    display: flex;
    /* border: 2px solid crimson; */
    height: 50px;
 }
-#rightpage button {
+#rightpage > button {
+    /* background-color: rgba(175, 169, 169, 0.29) !important;    */
     margin-left: 90px;
+    background-color: white ;
     color: #10847E;
     font-weight:bold;
     height: 20px;
@@ -158,10 +189,10 @@ td {
     padding-bottom: 50px;
 }
 
-#parent2 > div:nth-child(3) {
+/* #parent2 > div:nth-child(3) {
    display: flex;
 
-}
+} */
 #pro > h4 {
     background-color:#E9F9FF;
     /* width: 70%; */
@@ -174,4 +205,14 @@ td {
 #pro {
     width: 70%;
 }
+.temp{
+    border:1px dashed #f3cab1;
+    width: 50%;
+    /* margin: 20px; */
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
 

@@ -18,15 +18,16 @@
     <div id="main">
 
         <div id="parent1">
+            <b><p>Home</b> > Dolo 650mg Strip Of 15 Tablets</p>
             <div id="boxes">
                 <div>
                     <!-- <img src="https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100" alt=""> -->
-                    <div>
+                    <div class="img">
                         <img id="box"
                             src="https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100"
                             alt="">
                     </div>
-                    <div>
+                    <div id="small">
                         <img src="https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=100x80&dpr=1&q=100"
                             alt="">
                         <img src="https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-3-1653986087.jpg?dim=100x80&dpr=1&q=100"
@@ -39,15 +40,14 @@
                     <h2>Dolo 650mg Strip Of 15 Tablets</h2>
                     <p> By MICRO LABS</p>
                     <h3>15 Tablet(s) in Strip</h3>
-                    <p>₹29.13*
-                        MRP ₹34.27
-                        15% OFF </p>
+                    <p>₹29.13* <s>MRP ₹34.27</s>  15% OFF</p>
                     <h5>Inclusive of all taxes</h5>
-                    <button>Add to Cart</button>
+                    <button onclick="addtoCart()" id="addincart">Add to Cart</button>
                     <p>Delivery by <b>Today, before 10:00 pm</p></b>
                 </div>
             </div>
             <div id="pro">
+                <!-- <img src="<i class="fa-thin fa-box-open"></i>" alt=""> -->
                 <h4>All the Products are packed and stored Safely</h4>
 
 
@@ -133,30 +133,136 @@
     </div>
     <div id="parent2">
         <h3>Please add item(s) to proceed</h3>
-        <button>View Cart ></button>
+        <button id="first">View Cart ></button>
         <h3>Quick Links</h3>
 
-        <h4>Uses Contraindications Side effects</h4>
+        <!-- <h4 >Uses Contraindications Side effects</h4>
         <h4>Precautions and Warnings Directions for Use</h4>
         <h4>Storage and disposal Dosage Mode of Action</h4>
-        <h4> InteractionsOther Products</h4>
-        <div id="rightpage">
-            <h3>Offers Just for you</h3>
-            <button>View All</button>
-           
-        </div>
-        <div id="lastimg">
-            <img src="https://cms-contents.pharmeasy.in/offer/c7c05f94b53-PocketEasyLogo.jpg" alt="">
-            <p>Flat 20% OFF + Free Delivery on medicines</p>
-        </div> 
-        <div id="lastpara">
-            <img src="https://cms-contents.pharmeasy.in/offer/a22cacf84bd-PocketEasyLogo.jpg" alt="">
+        <h4> InteractionsOther Products</h4> -->
+        <ul style="list-style-type:disc; display:flex; gap:30px;">
+            <li>Uses </li>
+            <li>Contraindications</li>
+            <li>Side effects</li>
 
-            <p>Flat 27% OFF + Free Delivery on medicines</p>
-
-        </div>  
+          </ul>
+          <ul style="list-style-type:disc; display:flex; gap:30px;">
+            <li>Precautions and Warnings</li>
+            <li>Directions for Use </li>
+            
+          </ul>
+          <ul style="list-style-type:disc; display:flex; gap:30px;">
+            <li> Storage and disposal</li>
+            <li>Dosage</li>
+            <li> Mode of Action</li>
+            
+          </ul>
+          <ul style="list-style-type:disc; display:flex; gap:30px;">
+            <li> Interactions</li>
+            <li>Other Products</li>
+            
+            
+          </ul>
         
+        
+        
+        <div class="temp">
+            <div id="rightpage">
+                <h3>Offers Just for you</h3>
+                <button>View All</button>
+            </div> 
+            <div id="lastimg">
+                <img src="https://cms-contents.pharmeasy.in/offer/c7c05f94b53-PocketEasyLogo.jpg" alt="">
+                <p>Flat 20% OFF + Free Delivery on medicines</p>
+            </div> 
+            <div id="lastpara">
+                <img src="https://cms-contents.pharmeasy.in/offer/a22cacf84bd-PocketEasyLogo.jpg" alt="">
+    
+                <p>Flat 27% OFF + Free Delivery on medicines</p>
+    
+            </div> 
+        </div>
     </div>
 </body>
 
 </html>
+<script src="./product.js">
+    var arr = [
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    },
+    {
+        img: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=320x320&dpr=1&q=100",
+        name: "Dolo 650mg Strip Of 15 Tablets",
+        manu : "Macro Labs",
+        qty : "1",
+        strp : "",
+        price : "",
+        disc : "",
+    }
+
+];
+
+
+
+</script>
