@@ -5,47 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment page</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
     <link rel="stylesheet" href="checkoutpage.css">
     <script src="checkoutpage.js" ></script>
 </head>
 <body>
     <div id="header">
         <div class="ph">
-            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=360x0" alt="pharmeasy">
+            <a href="Landing page.html"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=360x0" alt="pharmeasy"></a>
+            
         </div>
         <div class="logo">
-            <p style="padding-left: 30px ;">100% Secure Payments</p>
+            <span class="material-symbols-outlined">stars</span>
+            <p >100% Secure Payments</p>
         </div>
         
     </div>
     <div id="container"> 
         <div class="left">
             <h1>Offers</h1>
-            <div>
-                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="paytm">
-                <button> Paytm Wallet</button><br>
-                <input id="pbtn" type="submit" value="Place order & Pay" onclick="payment()">
-                <hr>
-            </div>
-            <div>
-                <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="amezonpay">
-                <button> Amazon Pay</button><br>
-                <input id="pbtn" type="submit" value="Place order & Pay" onclick="payment()">
-                <p> Up to Rs.600 cashback on minimum transaction of Rs.299. Valid once per user.</p>
-                <hr>
-            </div>
-            <div>
-                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="mobikwik">
-                <button> MobiKwik | ZIP (Pay Later)</button><br>
-                <input id="pbtn" type="hidden" value="Place order & Pay" onclick="payment()">
-                <p> Up to Rs.650 cashback on Mobikwik. Code:MBK650. Valid once & order above Rs.800.</p>
-                <hr>
-            </div>
+           
+            <section>
+                <!-- <div class="container"> -->
+                    <div class="accordion-item" id="paytm">
+                        <a class="accordion-link" href="#paytm">
+                           <div class="payimg">
+                            <img class="imgpay " src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="">
+                        </div>
+                            <div class="walletflex">
+                            <div >
+                            <h3 class="payname">Paytm Wallet</h3>
+                            <p class="paraname">Upto 3000 cashback points on a minimum transaction of Rs.599. Valid once per user.</p>
+                        </div>
+                            
+                        <div class="lastbutton"></div>
+                        </div>
+                        </a>
+                        <div class="answer">
+                            <div class="linkwallet">
+                                <a href="Landing page.html"><h3 class="wallettext" onclick="payment()">Place Order & Pay</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="accordion-item" id="amazonpay">
+                        <a class="accordion-link" href="#amazonpay">
+                            <div class="payimg">
+                            <img class="imgpay " src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="">
+                                </div>
+                            <div class="walletflex">
+                            <div >
+                            <h3 class="payname">Amazone Pay</h3>
+                            <p class="paraname">Up to Rs.600 cashback on a minimum transaction of Rs.399. Valid once per user.</p>
+                        </div>
+                            
+                        <div class="lastbutton"></div>
+                        </div>
+                        </a>
+                        <div class="answer">
+                            <div class="linkwallet">
+                                <a href="Landing page.html"><h3 class="wallettext" onclick="payment()">Place Order & Pay </h3></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="accordion-item" id="mobikwik">
+                        <a class="accordion-link" href="#mobikwik">
+                            <div class="payimg">
+                            <img class="imgpay " src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="">
+                                </div>
+                            <div class="walletflex">
+                            <div >
+                            <h3 class="payname">Mobikwik</h3>
+                            <p class="paraname">Up to Rs.650 cashback on Mobikwik. Code:MBK650. Valid once & order above Rs.800.</p>
+                        </div>
+                            
+                        <div class="lastbutton"></div>
+                        </div>
+                        </a>
+                        <div class="answer">
+                            <div class="linkwallet">
+                                <a href="Landing page.html"><h3 class="wallettext" onclick="payment()">Place Order & Pay </h3></a>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </section>
+
+            
+            
 
             <h1>Other Options</h1>
             <div>
-                <img src="https://cdn.pharmeasy.in/payments/upi.png" alt="upi">
-                <button> UPI</button>
+                <div id="otherop">
+                    <img src="https://cdn.pharmeasy.in/payments/upi.png" alt="upi">
+                <h3> UPI</h3>
+                </div>
                 <div class="upi">
                     <img src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png" alt="paytm">
                     <img src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeWallet.png" alt="phonepay">
@@ -57,8 +118,11 @@
 
             </div>
             <div> 
-                <img src="https://cdn.pharmeasy.in/payments/wallet.png" alt="wallets">
-                <button> Wallets</button>
+                <div id="otherop">
+                    <img src="https://cdn.pharmeasy.in/payments/wallet.png" alt="wallets">
+                <h3> Wallets</h3>
+                </div>
+                
                 <div>
                     <img src="https://consumer-app-images.pharmeasy.in/payment-icons/amazonpay.png" alt="amezonpay">
                     <img src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png" alt="paytm">
@@ -71,8 +135,11 @@
 
             </div>
             <div>
-                <img src="https://cdn.pharmeasy.in/payments/card.png" alt="credit card">
-                <button> Credit/Debit Card</button>
+                <div id="otherop">
+                    <img src="https://cdn.pharmeasy.in/payments/card.png" alt="credit card">
+                <h3> Credit/Debit Card</h3>
+                </div>
+                
                 <p> Up to Rs.150 off on HSBC Cashback Credit Card. Valid once per user & on orders above Rs.1000. <br>
                     Flat Rs.200 off on Citi Cards. Valid once per user & on orders above Rs.2000</p>
                     <div>
@@ -85,14 +152,20 @@
                     <hr>
             </div>
             <div>
-                <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="netbanking">
-                <button>Net Banking</button>
+                <div id="otherop">
+                    <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="netbanking">
+                <h3>Net Banking</h3>
+                </div>
+                
                 <p> We support over 100 banks</p>
                 <hr>
             </div>
             <div>
-                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="cod">
-                <button>Cash on Delivery</button>
+                <div id="otherop">
+                    <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="cod">
+                <h3>Cash on Delivery</h3>
+                </div>
+                
                 <p>Rs 2 will be charged for Cash on Delivery.Switch to online payments to save on Rs25.</p>
                 <hr>
             </div>
@@ -107,18 +180,18 @@
                     <h3 id="headingRow">Price Breakdown </h3>
                     <div class="row1">
                          <h4>Cart Value</h4>
-                         <p style=" margin-left: 50%;"> 200 </p> 
+                         <p id="cartPrice"> </p>
                     </div>
                     <div class="row2"> 
                         <h4>Delivery charges</h4> 
-                        <p> ₹75 </p>
+                        <p id="deliverycharge"> </p>
                     
                     
                     </div>
                     <hr id="st"> 
                     <div class="row3"> 
                         <h4>Amount to be paid</h4> 
-                        <p> ₹926.39 </p>
+                        <p id="totalbillpaid"> </p>
                     
                     
                     </div>

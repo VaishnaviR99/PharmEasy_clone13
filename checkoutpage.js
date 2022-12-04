@@ -1,30 +1,16 @@
-document.querySelector("form").addEventListener("click", mybill)
-
-function mybill(){
- event.preventDefault();
-
- var cv=200;
- 
- var tr=document.createElement("tr");
-
- var td1=document.createElement("td");
- td1.textContent= "Cart Value";
-
- var td2=document.createElement("td");
- td2.textContent= cv;
- 
- tr.appent(td1, td2);
- document.querySelector("tbody").append(tr);
-}
-
-
 
 function payment(){
     alert("Payment successful !"); 
+    
 } 
 
-function cartv(){
-    var bill=123;
-}
+
+var cartAmount=JSON.parse(localStorage.getItem("cartTotal"));
+document.querySelector("#cartPrice").innerText=cartAmount;
+
+let delivery= 75;
+document.querySelector("#deliverycharge").innerText=delivery;
+var totalBill=JSON.parse(localStorage.getItem("totalBill"));
+document.querySelector("#totalbillpaid").innerText=totalBill;
 
     
