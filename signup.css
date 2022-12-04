@@ -72,7 +72,9 @@
     text-decoration: underline;
 }
 
-
+.form--hidden{
+    display: none;
+}
 .form__button{
     margin: 20px;
     padding: 20px;
@@ -93,4 +95,5 @@
 
 
 
+ 
  
