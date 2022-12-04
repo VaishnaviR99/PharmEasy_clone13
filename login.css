@@ -33,7 +33,7 @@
      
     
  }
- button{
+ #btn{
      margin: 20px;
      padding: 20px;
      padding-right: 91%;
@@ -52,4 +52,47 @@
      margin-bottom: -2%;
      color: rgb(95, 93, 93);
  }
+ 
+
+.form__button:active {
+    transform: scale(0.98);
+}
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+.form--hidden{
+    display: none;
+}
+.form__button{
+    margin: 20px;
+    padding: 20px;
+    padding-right: 91%;
+    background-color: #30908b;
+    border-radius: 10px;
+
+    
+
+}
+
+#result{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+
+
+
  
