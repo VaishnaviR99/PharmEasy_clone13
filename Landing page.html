@@ -12,14 +12,14 @@
     </head>
     <body>
         <section id="header">
-            <a href="#"><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0"></a>
+            <a href="#"><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" onclick="(location.href ='Landing page.html')" style="cursor:pointer;"></a>
             <!-- <p>Express delivery to Select Pincode</p> -->
             <div>
                 <ul id="topbar">
                     <li><a href="downloadApp.html"><i class="fa-light fa-mobile-button"></i>Download App</a></li>
                     <li><a href="login.html">Hello, Log in</a></li>
                     <li><a href="Offers.html">Offers</a></li>
-                    <li><a href="Cart.html">Cart</a></li>
+                    <li><a href="cart_page.html">Cart</a></li>
                 </ul>
             </div>
             
@@ -282,9 +282,9 @@
             <div id="productlist">
                 <div class="productbox">
                     <div id="product">
-                        <img src="images/21.PNG" onclick="b1()">
-                        <p>Calcimax Forte Plus Strip Of 30 Tablets</p>
-                        <p>MRP ₹228</p>
+                        <img src="https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=1440x0" onclick="b1()">
+                        <p>Dolo 650mg Strip Of 15 Tablets</p>
+                        <p>MRP ₹29.13</p>
                         <!-- <p>MRP ₹285</p> -->
                     </div>
                     <div id="product">
@@ -731,7 +731,7 @@
                 // ---url
                 var targeturl=event.target.src
                 localStorage.setItem("target", targeturl);
-                window.location.href="https://pharmeasy.in/health-care/products/calcimax-forte-plus-strip-of-30-tablets-19501";
+                window.location.href="product1.html";
             }
             function b2(){
                 console.log();
