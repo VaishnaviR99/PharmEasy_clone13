@@ -30,6 +30,12 @@ function signup(e) {
           alert("Account created succesfully...!!!");
          }
          
-         
+         signuptest();
  }
+
+
+ function signuptest() {
+  window.location.href = "login.html";
+  
+}
 
