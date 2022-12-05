@@ -10,7 +10,8 @@ function Acart(){
           price: "29.13",
           strikedoffprice: "₹34.27",
           discount:"15% OFF",
-          delivery:"Today,before 10pm",
+          delivery:"delivery -Today,before 10pm",
+          count:"1",
         }
 
         
@@ -19,5 +20,9 @@ function Acart(){
        cartarr.push(product);
        console.log(product)
        localStorage.setItem("cart",JSON.stringify(cartarr));
+       
+
+       document.getElementById("add to cart").disabled = true;
+       
     
     }

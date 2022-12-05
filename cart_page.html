@@ -9,7 +9,8 @@
 
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-     <link rel="stylesheet" href="cart.css">
+     <link rel="stylesheet" href="cart_page.css">
+     <link rel="stylesheet" href="cart_page.js">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -41,7 +42,7 @@
             <button><span class="material-symbols-outlined">person</span>Hello, Log in</button>
             <button><span class="material-symbols-
                 outlined">verified</span>Offers</button>
-            <button><span class="material-symbols-outlined">shopping_cart</span>Cart</button>
+            <button onclick="(location.href ='cart_page.html')"><span class="material-symbols-outlined">shopping_cart</span>Cart</button>
         </div>
         
         
@@ -50,24 +51,50 @@
     <div class="homebtn" >
         <a href="Landing page.html">Home</a>
     </div>
+    <div id="items_in_cart" style="display: flex; ">
+        <div id="items" class="items_p"style="width:50%;">
+            <h3 id="items_count"></h3>
+            <table>
+                <thead>
+                    <tr>
+                        <!-- <td id="i"></td>
+                        <td id="d"></td>
+                        <td id="remove"></td> -->
+                        
+                    </tr>
+                </thead>
+                <tbody id="dataAppend">
+                </tbody>
+            </table>
+        </div>
 
-    <div class="checkout">
-        <div class="items" style="width:60%;">
-            <h4></h4> 
-            
-            <div class="product">
-              <!--span class="material-symbols-outlined">shopping_bag</span>
-              <h4>cart is empty!!</h4>-->
+        <div id="bill" style="width:35%; display:none;">
+            <div id="div2">
+                <div class="total" style="display: flex;">
+                    <div>Cart Total :</div>
+                    <div class="totalT"> </div>
+                </div>
+                <h3> </h3>
+                <button id="add_del_address" >Add Delivery Addresss</button>
             </div>
+
+            <div id="summary" style="display:none; ">
+                <h4>Bill Summary</h4>
+                <hr>
+                <div style="display: flex;">
+                    <h4>Amount to be paid</h4>
+                     <p class="amount_paid"></p>
+                </div>
+                
+                
+
+            </div>
+
         </div>
 
-        <div class="total" id="t" style="width:40%;">
-            <h4></h4>
-        </div>
-     
-         
     </div>
 
+    
     
 
     
@@ -158,4 +185,7 @@
     
 </body>
 </html>
-<script src="cart.js"></script>
+<script src="cart_page.js">
+    
+    
+</script>
