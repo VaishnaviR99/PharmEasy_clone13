@@ -24,4 +24,5 @@
      
      function logintest() {
       window.location.href = "Landing page.html";
+      
   }
