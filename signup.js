@@ -28,9 +28,10 @@ function signup(e) {
          }
          else if(pass===cpass){
           alert("Account created succesfully...!!!");
+          signuptest();
          }
          
-         signuptest();
+       
  }
 
 
