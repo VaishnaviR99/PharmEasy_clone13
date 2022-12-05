@@ -1,10 +1,10 @@
 
-var productIncart = JSON.parse(localStorage.getItem("cart")) || [];
+/*var productIncart = JSON.parse(localStorage.getItem("cart")) || [];
 if (productIncart.length == 0) {
     document.querySelector(".items>h4").textContent = "0 Item in your Cart"
 }
 var items = productIncart.length;
-document.querySelector(".items>h4").textContent = items + " Item in your Cart";
+//document.querySelector(".items>h4").textContent = items + " Item in your Cart";
 displayproducts();
 
 function displayproducts() {
@@ -37,12 +37,12 @@ function displayproducts() {
         var cartimg = document.createElement("div");
         cartimg.setAttribute("class", "img")
         cartimg.append(image)
-        document.querySelector(".product").appendChild(cartimg);
+        //document.querySelector(".product").appendChild(cartimg);
 
         var decription = document.createElement("div");
         decription.setAttribute("class", "descp")
         decription.append(name, tab, price, strikedoffP, discount, delivery);
-        document.querySelector(".product").appendChild(decription);
+        //document.querySelector(".product").appendChild(decription);
 
         /*var d=document.createElement("div");
         d.setAttribute("class", "d")
@@ -61,8 +61,8 @@ function displayproducts() {
 
 
         
-        var totalarr = localStorage.getItem("cartTotal");
-        console.log(totalarr)
+        /*var totalarr = localStorage.getItem("cartTotal");
+       // console.log(totalarr)
         if (totalarr == 0) {
             total = ele.price;
             
@@ -75,7 +75,7 @@ function displayproducts() {
         
 
         
-         document.querySelector(".total>h4").textContent = "cart total:" + "₹" + total;
+         //document.querySelector(".total>h4").textContent = "cart total:" + "₹" + total;
 
         var addbtn = document.createElement("button");
         addbtn.textContent = "Add delivery address";
@@ -145,4 +145,4 @@ function displayproducts() {
 
 
     })
-}
+}*/

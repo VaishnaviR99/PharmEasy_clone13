@@ -7,7 +7,7 @@ function payment(){
 
 
 var cartAmount=localStorage.getItem("cartTotal");
-document.querySelector("#cartPrice").textContent=cartAmount;
+document.querySelector("#cartPrice").textContent = cartAmount;
 
 var delivery= chargesDelivery();
 document.querySelector("#deliverycharge").textContent=delivery;
