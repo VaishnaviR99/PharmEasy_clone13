@@ -18,10 +18,11 @@ function Acart(){
 
 
        cartarr.push(product);
-       console.log(product)
+       //console.log(product)
        localStorage.setItem("cart",JSON.stringify(cartarr));
        
-
+       document.getElementById("add to cart").style.backgroundColor="gray";
+       document.getElementById("add to cart").value = "Added to Cart";
        document.getElementById("add to cart").disabled = true;
        
     

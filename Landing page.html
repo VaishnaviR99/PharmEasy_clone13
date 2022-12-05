@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>pharmeasy</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <link href="landingpage.css" rel="stylesheet" type="text/css" />
+        <script src="https://kit.fontawesome.com/05ed811abe.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" onclick="(location.href ='Landing page.html')" style="cursor:pointer;"></a>
+            <!-- <p>Express delivery to Select Pincode</p> -->
+            <div>
+                <ul id="topbar">
+                    <li><a href="downloadApp.html"><i class="fa-light fa-mobile-button"></i>Download App</a></li>
+                    <li><a href="login.html">Hello, Log in</a></li>
+                    <li><a href="Offers.html">Offers</a></li>
+                    <li><a href="cart_page.html">Cart</a></li>
+                </ul>
+            </div>
+            
+        </section>
+
+        <hr style="margin-top: -25px;">
+        <section id="headbar">
+            <div>
+                <ul id="navbar">
+                    <li><a href="medicine">Medicine</a></li>
+                    <li><a href="labtest">Lab Tests</a></li>
+                    <li><a href="healthcare">Healthcare</a></li>
+                    <li><a href="healthblog">Health Blogs</a></li>
+                    <li><a href="plus">PLUS</a></li>
+                    <li><a href="offers">Offers</a></li>
+                    <li><a href="surgeries">Surgeries</a></li>
+                    <li><a href="valuestore">Value Store</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <hr style="margin-top: -5px;">
+        <section id="one">
+            <div >
+                <h2 style="font-size: 20px;">What are you looking for?</h2>
+                <p><i class="fa-light fa-memo"></i>Order with prescription.<a> UPLOAD NOW</a></p>
+            </div>
+            <div id="searchbar">
+            <div class="container">
+                    <form >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for ">
+                        <button type="submit">Search</button>
+                        <div class="searchslider">
+                            <div>Medicine</div>
+                            <div>Shampoo</div>
+                            <div>Health Drinks</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="list">
+                <div class="listbox">
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" onclick="a1()">
+                        <hr>
+                        <h6>Medicine</h6>
+                        <h6 style="color: #f47779; font-size: 14px;">UPTO 20% OFF</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0 " onclick="a2()">
+                        <hr>
+                        <h6>Lab Tests</h6>
+                        <h6 style="color: #f47779; font-size: 14px;">UPTO 70% OFF</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" onclick="a3()">
+                        <hr>
+                        <h6>Healthcare</h6>
+                        <h6 style="color: #f47779; font-size: 14px;">UPTO 60% OFF</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" onclick="a4()">
+                        <hr>
+                        <h6>Helath Blogs</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" onclick="a5()">
+                        <hr>
+                        <h6>PLUS</h6>
+                        <h6 style="color: #f47779; font-size: 14px;">SAVE 5% EXTRA</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" onclick="a6()">
+                        <hr>
+                        <h6>offers</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0" onclick="a7()">
+                        <hr>
+                        <h6>surgeries</h6>
+                    </div>
+                    <div class="box">
+                        <img src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" onclick="a8()">
+                        <hr>
+                        <h6 >Value Store</h6>
+                        <h6 style="color: #f47779; font-size: 14px;">UPTO 50% OFF</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="https://cdn01.pharmeasy.in/dam/banner/banner/4651dc3a993-STAR25.jpg"></div>
+                  <div class="swiper-slide"><img src="https://cdn01.pharmeasy.in/dam/banner/banner/1db79875546-YAY550.jpg"></div>
+                  <div class="swiper-slide"><img src="https://cdn01.pharmeasy.in/dam/banner/banner/c1d5d73aae8-STOCKCLEARANCEsALE.jpg"></div>
+                  <div class="swiper-slide"><img src="https://cdn01.pharmeasy.in/dam/banner/banner/b3a4bdb683b-1.jpg"></div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section id="two">
+            <h3 style="font-size: 25px; margin-top: 10px;">Lab Tests by Health Concern</h3>
+            <p>Powered by    <img src="https://assets.pharmeasy.in/apothecary/images/Thyrocare.webp?dim=1440x0"></p>
+            <div id="twobar">
+                <div><i class="fa-light fa-thumbs-up"></i><p>Recommended by health experts</p></div>
+                <div><i class="fa-thin fa-house"></i><p>Report in 24 hrs</p></div>
+                <div><i class="fa-thin fa-house"></i><p>Home Sample Pickup</p></div>
+                <div><i class="fa-regular fa-laptop-mobile"></i><p>World Class Technologies & labs</p></div>
+                <div><i class="fa-regular fa-id-badge"></i><p>Highly Skilled Technicians</p></div>
+                <div><i class="fa-regular fa-square-check"></i><p>100% Safe & Hygienic</p></div>
+            </div>
+            <div class="twoslide">
+                <div class="twowrapper">
+                    <!-- Slides -->
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/10dfe8c8aa7-HealthCheckups.jpg?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/69588f95674-Diabetes.jpg?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/6c5479c6c0c-Vitamins.jpg?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/c507b2563fd-thyroid.png?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/eeb3fe3251f-WomenCare.jpg?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/a953829ca96-Heart.jpg?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/94616a36a9a-Lifestyle.jpg?dim=256x0">
+                    <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/355e9b77fb5-FeverInfection.jpg?dim=256x0">
+                    ...
+                  </div>
+            </div>
+        </section>
+
+        <section id="threea">
+            <div>
+                <h2 style="font-size: 25px;margin-top: 80px;">Offers Just for You</h2>
+            </div>
+            <div class="imgtag">
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/offer/c287851239f-25_off.jpg?dim=1440x0">
+                    <p style="font-size:large;">Flat 25% OFF + FREE Delivery on <br>medicines</p>
+                </div>
+                <div>
+                    <img src="https://cms-contents.pharmeasy.in/offer/b1cafb3a0cf-flat_27_off.jpg?dim=1440x0">
+                    <p style="font-size:large;">Flat 27% OFF + FREE Delivery on <br>medicines</p>
+                </div>
+                <div style="background-color: #e2fffd;">
+                    <p style="font-size:large; color: #10847e; text-align:center">Log in to view more offers</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="threeb">
+            <div>
+                <h2 style="font-size: 25px;margin-top: 80px;">Payment Offers</h2>
+            </div>
+            <div class="imgtag">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/a93d45ef9eb-HSBC.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/051ca0c08ef-AMAZON-PAY.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/9466405c308-au.jpg?dim=1440x0">
+                <!-- <img src="https://cdn01.pharmeasy.in/dam/banner/banner/0c5c9ec6841-mobikwik.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/3c88b411e46-ola-money.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/7297689b914-AIRTEL.jpg?dim=1440x0"> -->
+            </div>
+        </section>
+
+        <section id="four">
+            <div>
+                <h2 style="font-size: 25px; margin-top: 80px;">Shop by Categories</h2>
+            </div>
+            <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/a7a03f6764393c65bab22e56de576a59.png?f=png?dim=256x0">
+                        <p>Mega Clearance Sale</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=256x0">
+                        <p>Personal Care</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/cfc8ee511609321e91eb86a34f5b2885.png?f=png?dim=256x0">
+                        <p>Healthcare Devices</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=256x0">
+                        <p>Health Food and Drinks</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/403b8ada7b113c7cb2e8d09e3420edfa.png?f=png?dim=256x0">
+                        <p>Beauty</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/fa936f30b4563fc4abd187fb22fe5258.png?f=png?dim=256x0">
+                        <p>Elderly Care</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/dc96175686f135b5a22d1e57165d0246.png?f=png?dim=256x0">
+                        <p>Home Care</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="four">
+            <div>
+                <h2 style="font-size: 25px; margin-top: 50px;">New Launches</h2>
+                <p>New wellness range just for you!</p>
+            </div>
+           <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="images/11.PNG">
+                        <p>Stayfree Cottony Xl 18s</p>
+                        <p>MRP ₹120</p>
+                    </div>
+                    <div id="product">
+                        <img src="images/12.PNG">
+                        <p>Pharmeasy Nebulizer</p>
+                        <p>MRP ₹1147</p>
+                    </div>
+                    <div id="product">
+                        <img src="images/13.PNG">
+                        <p>Dettol Soap Bar</p>
+                        <p>MRP ₹135</p>
+                    </div>
+                    <div id="product">
+                        <img src="images/14.PNG">
+                        <p>Health Food and Drinks</p>
+                        <p>MRP ₹135</p>
+                    </div>
+                    <div id="product">
+                        <img src="images/15.PNG">
+                        <p>Beauty</p>
+                        <p>MRP ₹135</p>
+                    </div>
+                    <div id="product">
+                        <img src="images/16.PNG">
+                        <p>Elderly Care</p>
+                        <p>MRP ₹135</p>
+                    </div>
+                    <div id="product">
+                        <img src="images/17.PNG">
+                        <p>Home Care</p>
+                        <p>MRP ₹135</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>    
+        <!-- trending -->
+        <section id="four"> 
+            <div>
+                <h2 style="font-size: 25px; margin-top: 80px;">Trending Near You</h2>
+                <p>Popular in your city</p>
+            </div>
+            <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg?dim=1440x0" onclick="b1()">
+                        <p>Dolo 650mg Strip Of 15 Tablets</p>
+                        <p>MRP ₹29.13</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/22.PNG" onclick="b2()">
+                        <p>Everherb Karela Jamun Juice</p>
+                        <p>MRP ₹207.48</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/23.PNG" onclick="b3()">
+                        <p>Nivea Body Milk Nourishing Lotion Bottle Of 200 Ml</p>
+                        <p>MRP ₹153.23</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/24.PNG" onclick="b4()">
+                        <p>Contour Plus Glucometer Test Strips Box Of 50</p>
+                        <p>MRP ₹889.11</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/25.PNG" onclick="b5()">
+                        <p>Pharmeasy All-In -One Vaporizer</p>
+                        <p>MRP ₹269.55</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/26.PNG" onclick="b6()">
+                        <p>Abzorb Antifungal Dusting Powder 100gm</p>
+                        <p>MRP ₹120.7</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/27.PNG" onclick="b7()">
+                        <p>Liveasy Essentials Adhesive Bandages - Box Of 100</p>
+                        <p>MRP ₹169.15</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </section>    
+
+        <section id="four">
+            <div>
+                <h2 style="font-size: 25px; margin-top: 80px;">Featured Brands</h2>
+                <p>Pick from our favourite brands</p>
+            </div>
+            <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/145bfaada43-Centrum.jpg?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Centrum</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/3eb4eb6bfbe-App_Himalaya.jpg?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Himalaya</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/f9536c55ef1-App.jpg?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Contour</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/40facc7fa28-Pharmeasy-App.jpg?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Pharmeasy</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/7a381fcb6e9-App_dettol-min.png?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Dettol</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/a559f294d43-Vicks-min.png?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Vicks</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://cms-contents.pharmeasy.in/carousel_item/62668bab7a1-AccuChek-min.png?dim=1440x0">
+                        <p style="font-weight: 500; font-size:large; color:#5d6166;">Accu-chek</p>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <section id="adimg">
+            <div>
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/fcbf95577c3-VELCRO.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/a9ad640ce01-4.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/93ef9d6df4f-SLIPPERS.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/6e16a38ea89-ORTHO_PEDOC.jpg?dim=1440x0">
+            </div>
+        </section>
+
+        <section id="four">
+            <div>
+                <h2 style="font-size: 25px; margin-top: 80px;">Deals of the Day</h2>
+                <p>Pick from our favourite brands</p>
+            </div>
+            <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="images/31.PNG">
+                        <p>Be One 100% Ayurvedic Energy 10 Capsules</p>
+                        <p>MRP ₹119.35</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/32.PNG">
+                        <p>Vantej Toothpaste For Hypersensitive Teeth Tube</p>
+                        <p>MRP ₹247.65</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/33.PNG">
+                        <p>Depiwhite Tube Of 15ml Eye Contour Gel</p>
+                        <p>MRP ₹522.06</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/34.PNG">
+                        <p>Liveasy Ortho Care Acupressure Slippers - Men</p>
+                        <p>MRP ₹341.43</p>
+                        <!-- <p>MRP ₹270</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/35.PNG">
+                        <p>Supradyn Immuno+ Multivitamin</p>
+                        <p>MRP ₹243</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/36.PNG">
+                        <p>Evion 400mg Strip Of 10 Capsules</p>
+                        <p>MRP ₹31.59</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/37.PNG">
+                        <p>Dr. Reddy'S Celevida Nutrition Drink For Diabetes</p>
+                        <p>MRP ₹292.5</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <section id="four">
+            <div>
+                <h2 style="font-size: 25px; margin-top: 80px;">In the Spotlight</h2>
+            </div>
+            <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="images/41.PNG">
+                        <p>Everherb Karela Jamun Juice</p>
+                        <p>MRP ₹207.48</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/42.PNG">
+                        <p>Liveasy Wellness Calcium Magnesium Vitamin D3</p>
+                        <p>MRP ₹389.35</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/43.PNG">
+                        <p>Pharmeasy All-In -One Vaporizer</p>
+                        <p>MRP ₹269.55</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/44.PNG">
+                        <p>Pharmeasy Hot Water Bag - Relieves Pain</p>
+                        <p>MRP ₹341.43</p>
+                        <!-- <p>MRP ₹270</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/45.PNG">
+                        <p>Pharmeasy Calcium Magnesium Vitamin D3 </p>
+                        <p>MRP ₹324.35</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/46.PNG">
+                        <p>Liveasy Wellness Diabetic Protein</p>
+                        <p>MRP ₹549.45</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                    <div id="product">
+                        <img src="images/47.PNG">
+                        <p>Liveasy Essentials Copper Bottle</p>
+                        <p>MRP ₹839.3</p>
+                        <!-- <p>MRP ₹285</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <section id="adimg">
+            <div>
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/28c0f6202b2-STOCK-CLEARANCE-SALE.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/810889b6613-babycare-min.png?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/5e9dc201ab9-DevicesClearanceStore.jpg?dim=1440x0">
+                <img src="https://cdn01.pharmeasy.in/dam/banner/banner/ed87375d79f-DiabeticCare-min.png?dim=1440x0">
+            </div>
+        </section>
+
+        <section id="four">
+            <div>
+                <h2 style="font-size: 25px; margin-top: 80px;">Health Articles</h2>
+                <p>Get up-to-date on our latest health updates</p>
+            </div>
+            <div id="productlist">
+                <div class="productbox">
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/27081521/1.webp?dim=1440x0">
+                        <p>Benefits of Vakrasana</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/11/27072621/18-1.jpg?dim=1440x0">
+                        <p>Sesame Oil</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/09/26130057/11-2.jpg?dim=1440x00">
+                        <p>Sunflower Oil</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/09/26124032/7.jpg?dim=1440x0">
+                        <p>Dill Leaves</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/09/26115625/3-1.jpg?dim=1440x0">
+                        <p>Lotus Stem</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/11/23060137/1-16.jpg?dim=1440x0">
+                        <p>Health Tips For People</p>
+                    </div>
+                    <div id="product">
+                        <img src="https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2022/10/03143042/Lifestyle-1-1-e1668506475164.jpg">
+                        <p>Home Care</p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section id="bottomimg">
+            <img src="images/Capture.PNG">
+            <img src="images/Capture2.PNG">
+        </section>
+
+        <section id="lasttext" style="color: rgb(126, 126, 126);">
+            <p>
+                <b>Top-Selling Healthcare Products:</b> Accu-Chek Active - 100 Strips | Supradyn Multivitamin Tablets| DR Morepen BG 03 - 50 Strips | Dettol Antiseptic Liquid | Ensure Diabetes Care Vanilla Sugar Free Jar | Dettol Instant Hand Sanitizer | Everherb Shilajit | Softovac SF Powder | Pediasure Premium Chocolate Refill
+            </p>
+            <p>
+                <b>Top-Selling Medicines:</b> Dolovera Gel | Neurobion Forte | Chymoral Forte | Crocin Advance | Soframycin | Dexorange | Becadexamin | Folvite | Livogen | Becosules | Fourderm | Nurokind Plus | Burnol | Crocin 650 | Mintop 5 | Thrombophob | Evion 600
+            </p>
+            <p>
+                <b>COVID-19 Preventatives:</b> N95 Masks | Hand Sanitizers | Hand Gloves, Disinfectants, Thermometers & more!
+            </p>
+            <p><b>Your One-Stop Online Pharmacy - PharmEasy</b></p>
+            <p>
+                <b>We've got India Covered!</b></br>
+                We now deliver in 1000+ cities and towns across 22000+ pin codes. We thereby cover every nook and corner of the country! The major cities in which we deliver include Mumbai, Kolkata, Delhi, Bengaluru, Ahmedabad, Hyderabad, Chennai, Thane, Howrah, Pune, Gurgaon, Navi Mumbai, Jaipur, Noida, Lucknow, Ghaziabad & Vadodara.
+            </p>
+            <p>
+                <b>Say Goodbye to All Your Healthcare Worries With PharmEasy!</b></br>
+                PharmEasy is here to help you take it easy! We are amongst one of India's top online pharmacy and medical care platforms. It enables you to order pharmaceutical and healthcare products online by connecting you to registered retail pharmacies and get them delivered to your home. We are an online medical store, making your purchase easy, simple, and affordable!    
+            </p>
+            <p>
+                <b>How Are We Making Lives Simpler With Our Online Medical Store?</b></br>
+                Our doorstep delivery service is available in PAN-India across top cities like Bangalore, Delhi, Mumbai, Kolkata, Hyderabad, Gurgaon, Noida, Pune, etc. Our online medical store also allows you to choose from 1 lakh+ products including OTC products and medical equipment. PharmEasy is a one-stop online medical platform where you can also book diagnostic tests including blood tests, full-body checkups, and other preventive health check-ups at an affordable cost, right from the comfort of your home. We have partnered with trusted & certified labs that arrange for a sample pick-up from the convenience of your home. They also provide you with timely reports.
+            </p>
+            <p>
+                <b>Why Are We The Most Preferred Online Pharmacy?</b></br>
+                Lucrative offers on our platform allow you to make payment online and via various payment wallets at a discounted price. Alternatively, you can also choose to pay cash on delivery as we deliver the products at your doorstep. We cater to all your pharmaceutical needs and also make ordering medicines online a hassle-free experience for you. We connect you only with registered retail pharmacies & certified diagnostic labs. We ensure that healthcare is affordable to all and make the process of ordering online simple.
+            </p>
+            <p>
+                <b>Sit Back & Relax While You Get Your Essentials Delivered Every Month!</b></br>
+                It’s tough to remember to refill every month, especially in the case of chronic diseases. PharmEasy’s subscription service not only ensures that you are reminded of your refills but also makes sure that you are never out on your medical essentials. You will get a reminder every month and your order will be delivered at your convenience!
+            </p>
+            <p>
+                <b>Access medical and health information:</b></br>
+                PharmEasy delivers reliable and accurate medical information that has been carefully written, vetted and validated by our health experts. Our specialists curate high-quality and most reliable literature about medicines, illnesses, lab tests, Ayurvedic and over the counter health products.
+            </p>
+            <p>
+                <b>We Believe in ‘Simplifying Healthcare, Impacting Lives!’</b></br>
+            </p>
+
+        </section>
+        <div class="myfooter">    
+        <div class="footer">
+            <div>
+                <h3>Company</h3>
+                <dl>
+                    <dt>About Us</dt>
+                    <dt>Creers</dt>
+                    <dt>Blogs</dt>
+                    <dt>Partner With Pharmeasy</dt>
+                </dl>
+                <h3>Our Services</h3>
+                <dl>
+                    <dt>Order Medicine</dt>
+                    <dt>Health Care Products</dt>
+                    <dt>Lab Tests</dt>
+                    <dt>Surgeries</dt>
+                </dl>
+            </div>
+    
+            <div>
+                <h3>Featured Categories</h3>
+                <dl>
+                    <dt>Mega Clearance Sale</dt>
+                    <dt>Personal Care</dt>
+                    <dt>Health Care</dt>
+                    <dt>Beauty</dt>
+                    <dt>Elderly Care</dt>
+                    <dt>Home Care</dt>
+                    <dt>Skin Care</dt>
+                    <dt>Diabetic Care</dt>
+                    <dt>Sexual Wellness</dt>
+                    <dt>Ayurvedic Care</dt>
+                    <dt>Health Condition</dt>
+                    <dt>Accesories And Wearable</dt>
+                </dl>
+            </div>
+    
+            <div>
+                <h3>Need Help</h3>
+                <dl>
+                    <dt>Browse All Medicines</dt>
+                    <dt>Browse All Molecules</dt>
+                    <dt>Browse All Cities</dt>
+                    <dt>Browse All Stores</dt>
+                    <dt>FAQs</dt>
+                </dl>
+                <h3>Policy Info</h3>
+                <dl>
+                    <dt>Editorial Policy</dt>
+                    <dt>Privacy Policy</dt>
+                    <dt>Terms and Conditions</dt>
+                    <dt>Customer Support Policy</dt>
+                    <dt>Return Policy</dt>
+                </dl>
+            </div>
+            <div>
+                <h3>Follow Us On</h3>
+                <div>
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/facebook.svg">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg">
+                </div>
+            </div>
+        </div>
+        <br style="background-color: rgb(238,244,255);">
+        <div class="paymentp">
+            <h4>Our Payment Partners</h4><br>
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/gpay.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/paytm.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/amazon-pay.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/phonepe.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/mobikwik.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/airtel-money.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/ola-money.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/maestro.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/mastercard.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/visa.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/rupay.svg" alt="">
+                    <img src="https://assets.pharmeasy.in/web-assets/_next/icons/diners.svg" alt="">
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+
+            function a1(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/online-medicine-order?src=homecard";
+            }
+            function a2(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/diagnostics?src=homecard";
+            }
+            function a3(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care?src=homecard";
+            }
+            function a4(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/surgicare/?utm_source=Homecardtile&utm_medium=web&utm_campaign=pe-surgicare&shortlink=qihlmq06&c=Surgicare&pid=Pe_surgicare";
+            }
+            function a5(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/blog/?src=homecard";
+            }
+            function a6(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/plus?src=homecard";
+            }
+            function a7(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/offers?src=homecard";
+            }
+            function a8(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care/9066?src=homecard";
+            }
+
+            function b1(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="product1.html";
+            }
+            function b2(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="navbar.html";
+            }
+            function b3(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care/products/nivea-body-milk-lotion-400ml-55401";
+            }
+            function b4(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care/products/contour-plus-glucometer-test-strips-box-of-50-4461?src=ooc-recommendation";
+            }
+            function b5(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care/products/pharmeasy-all-in--one-vaporizer-3123987?src=ooc-recommendation";
+            }
+            function b6(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care/products/one-touch-select-glucometer-test-strips-bottle-of-50-15466?src=ooc-recommendation";
+            }
+            function b7(){
+                console.log();
+                // ---url
+                var targeturl=event.target.src
+                localStorage.setItem("target", targeturl);
+                window.location.href="https://pharmeasy.in/health-care/products/liveasy-essentials-adhesive-bandages---box-of-100-3068258?src=ooc-recommendation";
+            }
+
+            // var arr=[
+            //     {
+            //         img:""
+            //         name:""
+            //         price=""
+            //     },
+            // ]
+        </script>
+    </body>
+    </html>

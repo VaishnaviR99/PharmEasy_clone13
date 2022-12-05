@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account </title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js" ></script>
+</head>
+<body>
+    <div id="header">
+        <div class="ph">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=360x0" alt="pharmeasy" onclick="(location.href ='Landing page.html')" style="cursor:pointer;">
+        </div>
+        <div class="logo">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg?dim=360x0" alt="logo">
+        </div>
+        
+    </div>
+    <h3> Quick Login / Register</h3>
+    <form  id="createAccount">
+        <input id="Name" type="text" autofocus placeholder="Enter Name"><br>
+        <input id="no" type="number" autofocus placeholder="Enter your phone number"><br>
+        <input id="passw" type="password" autofocus placeholder="Enter Password"><br>
+        <input id="cpassw" type="password" autofocus placeholder="Confirm Password"><br>
+        <button class="form__button" type="submit" onclick="signup()">
+            Continue
+            <a href="login.html"></a>
+        </button>
+         
+        
+       <p class="form__text" style="margin-top: 10px;">
+          Already have an account? 
+          <a class="form__link" href="login.html" id="linkLogin"> Sign in</a>
+       </p>
+    
+       
+   </form>
+    
+
+   <p>By clicking continue, you agree with our Privacy Policy</p>
+</body>
+</html>

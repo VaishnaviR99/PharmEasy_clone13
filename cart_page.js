@@ -147,7 +147,7 @@ var productIncart = JSON.parse(localStorage.getItem("cart")) || [];
                  
                 document.querySelector("#add_del_address").addEventListener("click" ,login);
                 function login(){
-                    window.location.href = "loginpage.html";
+                    window.location.href = "checkoutpage.html";
                 }
 
                 document.querySelector("#summary p").textContent= "₹" +totalprice

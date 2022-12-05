@@ -64,6 +64,8 @@ td:nth-child(1) {
     background-color: #10847E;
     height: 40px;
     width: 60%;
+    border: none;
+    border-radius: 10px;
 }
 #belowprod p {
     font-size: larger;
@@ -92,6 +94,7 @@ td {
     margin-top: 25px;
     margin-left: 150px;
     border:rgb(194, 234, 232);
+    
     
 }
 
@@ -173,4 +176,16 @@ td {
 }
 #pro {
     width: 70%;
+}
+
+#view_cart{
+    width: 300px;
+    height: 40px;
+    background-color: #10847E;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-right: -200px;
+    margin-bottom: -700px;
+    cursor: pointer;
 }
